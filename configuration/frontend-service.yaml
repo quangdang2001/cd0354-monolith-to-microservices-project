@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    service: frontend
   name: frontend
+  labels:
+    run: frontend
 spec:
   ports:
-    - name: "8080"
-      port: 8080
-      targetPort: 8080
+    - port: 80
+      protocol: TCP
   selector:
-    service: frontend
+    run: frontend
