@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: quangdang2001/udagram-api-feed:v3
+          image: quangdang2001/udagram-api-feed:v5
           ports:
             - containerPort: 80
           resources:

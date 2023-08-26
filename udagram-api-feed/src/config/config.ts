@@ -2,7 +2,7 @@ export const config = {
   'username': 'quang',
   'password': 'udacity1234',
   'database': 'udacityproject3',
-  'host': 'aws-udacity-prj3.c5dhvbtrzzwa.us-east-1.rds.amazonaws.com',
+  'host': '54.147.20.82',
   'dialect': 'postgres',
   'aws_region': 'us-east-1',
   'aws_profile': 'default',
