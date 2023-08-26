@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: backend-user
+      service: backend-user
   replicas: 2
   template:
     metadata:
       labels:
-        run: backend-user
+        service: backend-user
     spec:
       containers:
         - name: backend-user
@@ -19,6 +19,6 @@ spec:
             - containerPort: 80
           resources:
             limits:
-              cpu: 500m
+              cpu: 800m
             requests:
-              cpu: 200m
+              cpu: 500m

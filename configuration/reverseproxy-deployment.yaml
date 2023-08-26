@@ -5,16 +5,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      run: reverseproxy
+      service: reverseproxy
   replicas: 2
   template:
     metadata:
       labels:
-        run: reverseproxy
+        service: reverseproxy
     spec:
       containers:
         - name: reverseproxy
-          image: quangdang2001/reverseproxy:v3
+          image: quangdang2001/udagram-reverseproxy:v3
           ports:
             - containerPort: 80
           resources:

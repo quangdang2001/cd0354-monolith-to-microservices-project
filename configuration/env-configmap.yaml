@@ -5,7 +5,7 @@ data:
   AWS_PROFILE: default
   AWS_REGION: us-east-1
   JWT_SECRET: test
-  POSTGRES_DB: aws-udacity-prj3
+  POSTGRES_DB: udacityproject3
   POSTGRES_HOST: aws-udacity-prj3.c5dhvbtrzzwa.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100
   NODE_OPTIONS: --max-old-space-size=1024
