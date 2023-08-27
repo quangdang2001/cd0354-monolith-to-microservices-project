@@ -1,14 +1,14 @@
 export const config = {
-  'username': process.env.POSTGRES_USERNAME,
-  'password': process.env.POSTGRES_PASSWORD,
-  'database': process.env.POSTGRES_DB,
-  'host': process.env.POSTGRES_HOST,
+  'username': 'quang',
+  'password': 'quang2211',
+  'database': 'udacityprj3',
+  'host': '3.232.209.132',
   'dialect': 'postgres',
-  'aws_region': process.env.AWS_REGION,
-  'aws_profile': process.env.AWS_PROFILE,
-  'aws_media_bucket': process.env.AWS_BUCKET,
-  'url': process.env.URL,
+  'aws_region': 'us-east-1',
+  'aws_profile': 'default',
+  'aws_media_bucket': 'quang2211-udacity-projectj3',
+  'url': 'http://localhost:8080',
   'jwt': {
-    'secret': process.env.JWT_SECRET,
+    'secret': 'test',
   },
 };
