@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend-user
-          image: quangdang2001/udagram-api-user:v12
+          image: quangdang2001/udagram-api-user:v13
           resources:
             limits:
               cpu: 500m

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend-feed
-          image: quangdang2001/udagram-api-feed:v12
+          image: quangdang2001/udagram-api-feed:v13
           resources:
             limits:
               cpu: 800m
