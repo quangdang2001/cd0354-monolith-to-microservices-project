@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: reverseproxy
-          image: quangdang2001/udagram-reverseproxy:v3
+          image: quangdang2001/udagram-reverseproxy:v7
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           resources:
             limits:
-              cpu: 1000m
-            requests:
               cpu: 500m
+            requests:
+              cpu: 250m

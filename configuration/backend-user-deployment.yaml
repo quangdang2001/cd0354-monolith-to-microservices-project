@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       service: backend-user
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: backend-user
-          image: quangdang2001/udagram-api-user:v6
+          image: quangdang2001/udagram-api-user:v7
           ports:
             - containerPort: 80
           resources:
             limits:
-              cpu: 800m
-            requests:
               cpu: 500m
+            requests:
+              cpu: 250m
