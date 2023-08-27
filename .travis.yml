@@ -5,6 +5,10 @@ node_js:
 services:
   - docker
 
+env:
+  global:
+    - TAG=v11
+
 # Pre-testing installs
 install:
   - echo "nothing needs to be installed"
@@ -22,15 +26,15 @@ script:
   - docker build -t reverseproxy ./udagram-reverseproxy
 
   ## Tagging
-  - docker tag udagram-api-feed quangdang2001/udagram-api-feed:v10
-  - docker tag udagram-frontend quangdang2001/udagram-frontend:v10
-  - docker tag udagram-api-user quangdang2001/udagram-api-user:v10
-  - docker tag reverseproxy quangdang2001/reverseproxy:v10
+  - docker tag udagram-api-feed quangdang2001/udagram-api-feed:$TAG
+  - docker tag udagram-frontend quangdang2001/udagram-frontend:$TAG
+  - docker tag udagram-api-user quangdang2001/udagram-api-user:$TAG
+  - docker tag reverseproxy quangdang2001/reverseproxy:$TAG
 
 # Tasks to perform after the process is successful. Formatting the Docker username and password as below enables you to programmatically log in without having the password exposed in logs.
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push quangdang2001/udagram-api-feed:v10
-  - docker push quangdang2001/udagram-frontend:v10
-  - docker push quangdang2001/udagram-api-user:v10
-  - docker push quangdang2001/reverseproxy:v10
+  - docker push quangdang2001/udagram-api-feed:$TAG
+  - docker push quangdang2001/udagram-frontend:$TAG
+  - docker push quangdang2001/udagram-api-user:$TAG
+  - docker push quangdang2001/reverseproxy:$TAG

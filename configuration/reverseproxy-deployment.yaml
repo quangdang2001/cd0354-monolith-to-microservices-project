@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: quangdang2001/reverseproxy
+        - image: quangdang2001/reverseproxy:v10
           name: reverseproxy
           imagePullPolicy: Always
           resources:
