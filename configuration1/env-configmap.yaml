@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: quang2211-udacity-projectj3
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: test
+  POSTGRES_DB: udacityprj3
+  POSTGRES_HOST: quang2211-udacity-prj3.c5dhvbtrzzwa.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8080
+metadata:
+  name: env-config
