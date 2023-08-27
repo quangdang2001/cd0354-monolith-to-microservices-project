@@ -7,7 +7,7 @@ services:
 
 env:
   global:
-    - TAG=v12
+    - TAG=v13
 
 # Pre-testing installs
 install:
